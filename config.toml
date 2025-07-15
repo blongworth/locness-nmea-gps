@@ -1,0 +1,19 @@
+# GPS Logger Configuration
+
+[gps]
+port = "/dev/tty.usbmodem211101"
+baudrate = 9600
+timeout = 5
+
+[files]
+csv_filename = "gps_data.csv"
+db_filename = "gps_data.db"
+
+[database]
+table_name = "gps_data"
+
+[logging]
+console_level = "DEBUG"
+file_level = "DEBUG"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+file = "gps_app.log"

@@ -1,0 +1,10 @@
+[project]
+name = "locness-nmea-gps"
+version = "0.1.0"
+description = "NMEA GPS logger with file and database storage"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pynmeagps>=1.0.50",
+    "pyserial>=3.5",
+]
