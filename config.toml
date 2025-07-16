@@ -6,14 +6,15 @@ baudrate = 9600
 timeout = 5
 
 [files]
-csv_filename = "gps_data.csv"
-db_filename = "gps_data.db"
+csv_filename = "gps.csv"
+db_filename = "gps.db"
+#db_filename: "C:/Users/CSL 2/Documents/LOCNESS_data/locness.db"
 
 [database]
-table_name = "gps_data"
+table_name = "gps"
 
 [logging]
 console_level = "DEBUG"
 file_level = "DEBUG"
 format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-file = "gps_app.log"
+file = "gps.log"
