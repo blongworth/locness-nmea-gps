@@ -3,6 +3,8 @@
 Simple GPS logger main module.
 """
 
+# TODO: Fix runaaway issues with logging Error reading NMEA data error
+
 import argparse
 import logging
 import sys

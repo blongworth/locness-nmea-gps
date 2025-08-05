@@ -1,14 +1,15 @@
 # GPS Logger Configuration
 
 [gps]
-port = "/dev/tty.usbmodem211101"
+#port = "/dev/tty.usbmodem211101"
+port = "COM8"
 baudrate = 9600
 timeout = 5
 
 [files]
-csv_filename = "gps.csv"
-db_filename = "gps.db"
-#db_filename: "C:/Users/CSL 2/Documents/LOCNESS_data/locness.db"
+csv_filename = "C:/Users/CSL 2/Documents/LOCNESS_data/csvs/gps.csv"
+#db_filename = "gps.db"
+db_filename = "C:/Users/CSL 2/Documents/LOCNESS_data/database/locness.db"
 
 [database]
 table_name = "gps"
@@ -17,4 +18,4 @@ table_name = "gps"
 console_level = "DEBUG"
 file_level = "DEBUG"
 format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-file = "gps.log"
+file = "C:/Users/CSL 2/Documents/LOCNESS_data/logfiles/gps.log"

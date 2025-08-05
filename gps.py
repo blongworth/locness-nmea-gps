@@ -40,7 +40,7 @@ class GPSLogger:
         """Initialize SQLite database."""
         with sqlite3.connect(self.db_file) as conn:
             conn.execute('''
-                CREATE TABLE IF NOT EXISTS gps_data (
+                CREATE TABLE IF NOT EXISTS gps(
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     datetime_utc INTEGER NOT NULL,
                     nmea_time TEXT,
@@ -65,7 +65,7 @@ class GPSLogger:
             # Write to database
             with sqlite3.connect(self.db_file) as conn:
                 conn.execute('''
-                    INSERT INTO gps_data (datetime_utc, nmea_time, latitude, longitude)
+                    INSERT INTO gps (datetime_utc, nmea_time_utc, latitude, longitude)
                     VALUES (?, ?, ?, ?)
                 ''', (unix_timestamp, nmea_time, latitude, longitude))
                 conn.commit()
