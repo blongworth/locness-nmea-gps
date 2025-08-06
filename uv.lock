@@ -1,11 +1,11 @@
 version = 1
-revision = 2
+revision = 1
 requires-python = ">=3.13"
 
 [[package]]
 name = "locness-nmea-gps"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "pynmeagps" },
     { name = "pyserial" },
@@ -21,16 +21,16 @@ requires-dist = [
 name = "pynmeagps"
 version = "1.0.50"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/8d/d3/dc24ed8a0e429105b20bfbf5d8155659d4f1439bad203ad46a9cdd1fc9d0/pynmeagps-1.0.50.tar.gz", hash = "sha256:7ebefbe697fa71c939df176631674c15879863c0362af21f062bc9ff352ad246", size = 76539, upload-time = "2025-05-06T06:43:56.547Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8d/d3/dc24ed8a0e429105b20bfbf5d8155659d4f1439bad203ad46a9cdd1fc9d0/pynmeagps-1.0.50.tar.gz", hash = "sha256:7ebefbe697fa71c939df176631674c15879863c0362af21f062bc9ff352ad246", size = 76539 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e4/5f/15afebad449cfe563e8d1e5dfe2c307abbecdff34dbc6d0e4c8d453741b5/pynmeagps-1.0.50-py3-none-any.whl", hash = "sha256:24f6389f77f9d5f583bc677f141d7e7a76d48abb9a3a968dab26f77efe59fb1e", size = 52951, upload-time = "2025-05-06T06:43:54.679Z" },
+    { url = "https://files.pythonhosted.org/packages/e4/5f/15afebad449cfe563e8d1e5dfe2c307abbecdff34dbc6d0e4c8d453741b5/pynmeagps-1.0.50-py3-none-any.whl", hash = "sha256:24f6389f77f9d5f583bc677f141d7e7a76d48abb9a3a968dab26f77efe59fb1e", size = 52951 },
 ]
 
 [[package]]
 name = "pyserial"
 version = "3.5"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/1e/7d/ae3f0a63f41e4d2f6cb66a5b57197850f919f59e558159a4dd3a818f5082/pyserial-3.5.tar.gz", hash = "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb", size = 159125, upload-time = "2020-11-23T03:59:15.045Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1e/7d/ae3f0a63f41e4d2f6cb66a5b57197850f919f59e558159a4dd3a818f5082/pyserial-3.5.tar.gz", hash = "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb", size = 159125 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0", size = 90585, upload-time = "2020-11-23T03:59:13.41Z" },
+    { url = "https://files.pythonhosted.org/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0", size = 90585 },
 ]

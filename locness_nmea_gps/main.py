@@ -8,8 +8,8 @@ Simple GPS logger main module.
 import argparse
 import logging
 import sys
-from gps import GPSLogger, read_GPS
-from config_loader import (
+from locness_nmea_gps.gps import GPSLogger, read_GPS
+from locness_nmea_gps.config_loader import (
     load_config, get_gps_config, get_files_config, 
     get_logging_config
 )

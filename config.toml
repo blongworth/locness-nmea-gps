@@ -2,7 +2,7 @@
 
 [gps]
 #port = "/dev/tty.usbmodem211101"
-port = "COM8"
+port = "COM10"
 baudrate = 9600
 timeout = 5
 

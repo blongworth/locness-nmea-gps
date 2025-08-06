@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "locness-nmea-gps"
 version = "0.1.0"
@@ -8,3 +12,6 @@ dependencies = [
     "pynmeagps>=1.0.50",
     "pyserial>=3.5",
 ]
+
+[project.scripts]
+gps = "locness_nmea_gps.main:main"
