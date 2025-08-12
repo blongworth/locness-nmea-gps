@@ -71,7 +71,7 @@ class GPSLogger:
                 ''', (unix_timestamp, nmea_time, latitude, longitude))
                 conn.commit()
             
-            logger.debug(f"Logged GPS data: {latitude:.6f}, {longitude:.6f}")
+            logger.info(f"Logged GPS: {latitude:.6f}, {longitude:.6f}")
             
         except Exception as e:
             logger.error(f"Error logging data: {e}")

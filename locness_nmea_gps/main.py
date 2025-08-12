@@ -16,33 +16,14 @@ from locness_nmea_gps.config_loader import (
 
 
 def setup_logging(config: dict):
-    """Setup logging with both console and file output."""
-    # Get root logger
-    root_logger = logging.getLogger()
-    
-    # Set root logger to the most verbose level needed
-    console_level = getattr(logging, config.get('console_level', 'DEBUG').upper())
-    file_level = getattr(logging, config.get('file_level', 'DEBUG').upper())
-    root_logger.setLevel(min(console_level, file_level))
-    
-    # Clear existing handlers
-    root_logger.handlers.clear()
-    
-    # Create formatter
-    formatter = logging.Formatter(config['format'])
-    
-    # Console handler 
-    console_handler = logging.StreamHandler()
-    console_handler.setLevel(console_level)
-    console_handler.setFormatter(formatter)
-    root_logger.addHandler(console_handler)
-    
-    # File handler
-    if config.get('file'):
-        file_handler = logging.FileHandler(config['file'])
-        file_handler.setLevel(file_level)
-        file_handler.setFormatter(formatter)
-        root_logger.addHandler(file_handler)
+    """Setup logging using logging.basicConfig with file and stream handlers."""
+    LOGFILE = config.get('file', 'gps.log')
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%dT%H:%M:%S",
+        handlers=[logging.FileHandler(LOGFILE), logging.StreamHandler()],
+    )
 
 
 def main():
